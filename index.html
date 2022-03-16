@@ -13,6 +13,9 @@
     <!-- Custom swiper slider -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     
+    <!--------------- Custom AOS animation link ----------->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
     <!-- custom CSS files -->
     <link rel="stylesheet" href="Resources/Stylesheets/style.css">
 
@@ -25,11 +28,11 @@
 
     <!-------------------------- Header section start ------------------------>
     <header class="header">
-        <a href="#" class="logo"><span>Be</span>Aesthetic</a>
+        <a data-aos="slide-right" href="#" class="logo"><span>Be</span>Aesthetic</a>
 
         <div class="fas fa-bars" id="menu-btn"></div>
 
-        <nav class="navbar">
+        <nav class="navbar" data-aos="slide-left">
             <a href="#home">home</a>
             <a href="#about">about</a>
             <a href="#features">features</a>
@@ -43,7 +46,7 @@
 
     <section class="home" id="home">
 
-        <div class="swiper home-slider">
+        <div class="swiper home-slider" data-aos="zoom-in-up">
 
           <div class="swiper-wrapper">
             
@@ -80,11 +83,11 @@
 <!-------------------------- About section start -------------------------->
 
 <section class="about" id="about">
-    <div class="image">
+    <div class="image" data-aos="slide-right" data-aos-offset="300">
         <img src="Resources/images/about-img.jpg" alt="about-img">
     </div>
 
-    <div class="content">
+    <div class="content" data-aos="slide-left" data-aos-offset="300">
         <span>about us</span>
         <h3 class="title">Every day is a chance to become better</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus esse nisi quos qui non nobis hic repellat illum velit voluptas!</p>
@@ -119,10 +122,10 @@
     <h1 class="heading"><span> gym features</span></h1>
     <div class="box-container">
         <div class="box">
-            <div class="image">
+            <div class="image" data-aos="flip-right" data-aos-duration="1500">
                 <img src="Resources/images/f-img-1.jpg" alt="Loading Features">
             </div>
-            <div class="content">
+            <div class="content" data-aos="flip-right" data-aos-duration="1500">
                 <img src="Resources/images/icon-1.png" alt="">
                 <h3>body-building</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, asperiores?</p>
@@ -130,10 +133,10 @@
             </div>
         </div>
         <div class="box second">
-            <div class="image">
+            <div class="image" data-aos="flip-down" data-aos-duration="1500">
                 <img src="Resources/images/f-img-2.jpg" alt="Loading Features">
             </div>
-            <div class="content">
+            <div class="content" data-aos="flip-down" data-aos-duration="1500">
                 <img src="Resources/images/icon-2.png" alt="">
                 <h3>gym for men</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, asperiores?</p>
@@ -141,10 +144,10 @@
             </div>
         </div>
         <div class="box">
-            <div class="image">
+            <div class="image" data-aos="flip-left" data-aos-duration="1500">
                 <img src="Resources/images/f-img-3.jpg" alt="Loading Features">
             </div>
-            <div class="content">
+            <div class="content" data-aos="flip-left" data-aos-duration="1500">
                 <img src="Resources/images/icon-3.png" alt="">
                 <h3>gym for women</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia, asperiores?</p>
@@ -159,7 +162,7 @@
 
 <section class="pricing" id="pricing">
 
-    <div class="information">
+    <div class="information" data-aos="slide-right">
         <span>pricing plan</span>
         <h3>affordable pricing plan for you</h3>
         <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit qui sed inventore id consequuntur ipsum, vitae minima nemo itaque consequatur voluptas vel. Iste.</p>
@@ -170,7 +173,7 @@
         <a href="#" class="btn">all pricing</a>
     </div>
 
-    <div class="plan basic">
+    <div class="plan basic" data-aos="flip-up">
         <h3>basic plan</h3>
         <div class="price"><span>$</span>30<span>/mo</span>
             <div class="list">
@@ -184,7 +187,7 @@
         <a href="#" class="btn">get started</a>
     </div>
     
-    <div class="plan premium">
+    <div class="plan premium" data-aos="slide-left">
         <h3>premium plan</h3>
         <div class="price"><span>$</span>50<span>/mo</span>
             <div class="list">
@@ -208,7 +211,7 @@
     <h1 class="heading"><span>Expert Trainers</span></h1>
 
     <div class="box-container">
-        <div class="box">
+        <div class="box" data-aos="slide-right" data-aos-duration="2000">
             <img src="Resources/images/trainer-1.jpg" alt="Loading">
             <div class="content">
                 <span>Expert Trainer</span>
@@ -221,7 +224,7 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
             <img src="Resources/images/trainer-2.jpg" alt="Loading">
             <div class="content">
                 <span>Expert Trainer</span>
@@ -234,7 +237,7 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="fade-down" data-aos-duration="2000">
             <img src="Resources/images/trainer-3.jpg" alt="Loading">
             <div class="content">
                 <span>Expert Trainer</span>
@@ -247,7 +250,7 @@
                 </div>
             </div>
         </div>
-        <div class="box">
+        <div class="box" data-aos="slide-left" data-aos-duration="2000">
             <img src="Resources/images/trainer-4.jpg" alt="Loading">
             <div class="content">
                 <span>Expert Trainer</span>
@@ -267,7 +270,7 @@
 
 <!-------------------------- Banner section start -------------------------->
 
-<section class="banner">
+<section class="banner" data-aos="zoom-in-up">
 
     <span>Join us now</span>
     <h3>Get upto 50% discount</h3>
@@ -281,14 +284,14 @@
 
 <section class="review">
 
-    <div class="information">
+    <div class="information" data-aos="fade" data-aos-duration="2500">
         <span>Testimonials</span>
         <h3>What our clients says</h3>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae officiis consectetur voluptate aperiam voluptatem deleniti harum tempora quam, repellat animi!</p>
         <a href="#" class="btn">Read more</a>
     </div>
 
-    <div class="swiper review-slider">
+    <div class="swiper review-slider" data-aos="slide-left">
         <div class="swiper-wrapper">
             <div class="swiper-slide slide">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia, nihil.</p>
@@ -348,7 +351,7 @@
 
     <div class="swiper blogs-slider">
         <div class="swiper-wrapper">
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-right">
                 <div class="image">
                     <img src="Resources/images/blog-1.jpg" alt="Loading...">
                 </div>
@@ -359,7 +362,7 @@
                     <a href="#" class="btn">Read more</a>
                 </div>
             </div>
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-down">
                 <div class="image">
                     <img src="Resources/images/blog-2.jpg" alt="Loading...">
                 </div>
@@ -370,7 +373,7 @@
                     <a href="#" class="btn">Read more</a>
                 </div>
             </div>
-            <div class="swiper-slide slide">
+            <div class="swiper-slide slide" data-aos="fade-left data-aos=""">
                 <div class="image">
                     <img src="Resources/images/blog-3.jpg" alt="Loading...">
                 </div>
@@ -419,7 +422,7 @@
 
     <div class="box-container">
 
-        <div class="box">
+        <div class="box" data-aos="fade-right" data-aos-duration="2000">
             <h3>quick links</h3>
             <a class="links" href="#home">home</a>
             <a class="links" href="#about">about</a>
@@ -429,7 +432,7 @@
             <a class="links" href="#blogs">blogs</a>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-down" data-aos-duration="2000">
             <h3>opening hours</h3>
             <p>monday : <i>7:00am - 10:30pm</i></p>
             <p>tuesday : <i>7:00am - 10:30pm</i></p>
@@ -440,7 +443,7 @@
             <p>sunday : <i>closed</i></p>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-up" data-aos-duration="2000">
             <h3>Contact us</h3>
             <p><i class="fas fa-phone"></i>+123-456-7890</p>
             <p><i class="fas fa-phone"></i>+111-222-3333</p>
@@ -454,7 +457,7 @@
             </div>
         </div>
 
-        <div class="box">
+        <div class="box" data-aos="fade-left" data-aos-duration="2000">
             <h3>newsletter</h3>
             <p>subscribe us to know latest updates</p>
             <form action="#">
@@ -474,6 +477,13 @@
 
 <!-- custom swiper js file -->
 <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+        <script>
+          AOS.init({
+              duration:1000,
+          });
+        </script>
 </body>
 
 </html>
